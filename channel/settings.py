@@ -27,10 +27,14 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+# Daphne
+ASGI_APPLICATION = 'channel.asgi.application'
+
 
 # Application definition
 
 INSTALLED_APPS = [
+    'daphne',
     'chat',
     'django.contrib.admin',
     'django.contrib.auth',
